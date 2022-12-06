@@ -46,7 +46,7 @@ wbb_rosters23 <- wbb_rosters23 %>%
 
 # Positions Cleaning
 
-Describe the source data and what you needed to do to make it usable, and then what you did to make it possible to standardize the positions.
+We started with the positions in the Google sheet. Next, we looked at the unclean columns and determined how we wanted to find consistency of syntax and structure. We choose to capitalize all letters, separating positions with a slash if there we multiple positions. Next, we wrote our google sheet with the cleaned positions into a CSV, before joining it with the other roster data set. This provided us cleaned data with accurate positions assignments and syntax. 
 
 ```{r}
 positions_cleaned <- read_csv("https://raw.githubusercontent.com/dwillis/jour479x_fall_2022/main/data/wbb_positions.csv") %>%
